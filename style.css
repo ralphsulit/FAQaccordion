@@ -20,11 +20,10 @@ main {
 
 .main-container {
   background-color: hsl(0, 0%, 100%);
-  padding: 20px; 
+  padding: 18px; 
   border-radius: 10px;
-  height: 60vh;
   width: 90%;
-  margin-top: -100px;
+  margin-top: -75px;
 
   .title {
     display: flex;
@@ -38,21 +37,48 @@ main {
     }
   }
 
+  .accordion-1,
+  .accordion-2,
+  .accordion-3,
+  .accordion-4 {
+    margin-bottom: 20px;
+  }
+
+  .accordion-2,
+  .accordion-3,
+  .accordion-4  {
+    .panel {
+      display: none;
+    }
+  }
+
   button {
     background: none;
     border: none;
     color:  hsl(292, 42%, 14%);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     text-align: left;
     margin-bottom: 20px;
+    width: 100%;
+
+    span {
+      width: 180px;
+    }
 
     img {
       width: 25px;
       height: 25px;
     }
+  }
+
+  p {
+    font-size: 13px;
+    color: hsl(292, 16%, 49%);
+    line-height: 20px;
   }
 
   hr {
