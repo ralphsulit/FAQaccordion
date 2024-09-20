@@ -6,6 +6,7 @@
 
   .bg-desktop {
     display: block;
+    margin: auto;
   }
 
   .main-container {
