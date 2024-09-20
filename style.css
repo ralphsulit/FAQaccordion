@@ -4,12 +4,13 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   font-size: 16px;
   font-family: 'Work Sans', sans-serif;
   background-color: hsl(275, 100%, 97%);
   height: 100vh;
-
+  max-width: 100%;
+  overflow-x: hidden;   
 }
 
 main {
@@ -18,11 +19,15 @@ main {
   justify-content: center;
 }
 
+.bg-desktop {
+  display: none;
+}
+
 .main-container {
   background-color: hsl(0, 0%, 100%);
   padding: 18px; 
   border-radius: 10px;
-  width: 90%;
+  width: 288px;
   margin-top: -75px;
 
   .title {
@@ -52,6 +57,10 @@ main {
     }
   }
 
+  button:hover {
+    color:   hsl(292, 89%, 48%);
+  }
+
   button {
     background: none;
     border: none;
@@ -64,6 +73,7 @@ main {
     text-align: left;
     margin-bottom: 20px;
     width: 100%;
+    cursor: pointer;
 
     span {
       width: 180px;

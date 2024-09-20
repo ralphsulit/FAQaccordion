@@ -1,0 +1,21 @@
+/* Mobile View*/
+@media(min-width: 420px) {
+  .bg-mobile {
+    display: none;
+  }
+
+  .bg-desktop {
+    display: block;
+  }
+
+  .main-container {
+    width: 90%;
+    max-width: 440px;
+
+    button {
+      span {
+        width: 100%;    
+      } 
+    }
+  }
+}
